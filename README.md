@@ -1,4 +1,4 @@
-# gui-env
+# guide
 Graphical Interface for .Envs
 
 Visual Interface for interacting with config. The idea was hatched to solve issues found making flask, django and other apps following the 7 factor guidelines. 
@@ -6,7 +6,7 @@ Visual Interface for interacting with config. The idea was hatched to solve issu
 ## QuickStart
 
 Install the library.
-`pip install ___`
+`pip install guide`
 
 Let the library create your config.py file 
 `genv new`
@@ -16,9 +16,9 @@ Todo: how to specify where the config file should be?
 
 What we get is a decorator so we can set what configs are required. 
 ``` 
-import genv
+import guide
 
-@genv.config(required=True)
+@guide.config(required=True)
 def get_project_root() -> Path:
     return Path(__dir__)
 
@@ -32,7 +32,7 @@ def validate_project_root() -> None:
 
 What we really gets is a graphical user interface for our .env files. I always forget something when setting these so this helps fix that. 
 
-`genv`
+`guide`
 
 Todo: pictures of GUI
 
