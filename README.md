@@ -1,5 +1,5 @@
-# guide
-Graphical Interface for .Envs
+# Guide
+Graphical User Interface for dot env files. 
 
 Visual Interface for interacting with config. The idea was hatched to solve issues found making flask, django and other apps following the 7 factor guidelines. 
 
