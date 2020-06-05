@@ -100,8 +100,9 @@ def get_import_je_save_location() -> Path:
 
 # HTTP Settings
 def get_flask_secret_key():
-    secret_key = os.getenv('FLASK_SECRET_KEY', b'\x91\x909\x1aO\x12a\xd6N\x14(\x9c\x93[6E')
-    return secret_key
+    return os.getenv(
+        'FLASK_SECRET_KEY', b'\x91\x909\x1aO\x12a\xd6N\x14(\x9c\x93[6E'
+    )
 
 
 def validate_flask_secret_key():
